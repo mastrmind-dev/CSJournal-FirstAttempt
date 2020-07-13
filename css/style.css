@@ -5,6 +5,7 @@ body{
     line-height: 1.5rem;
     color: #333;
     overflow-x: hidden;
+    display: block;
 }
 /******************************************************************************************/
 
@@ -13,6 +14,10 @@ body{
     z-index: 10;
     background-size: auto;
     background: rgba(0, 0, 0, .5);
+    padding:0; 
+}
+ul.topnav li.dropdownIcon {
+    display: none;
 }
 .navbar-brand span{
     color: #f5bb00;
@@ -26,7 +31,6 @@ body{
 .my-nav .active-link{
     background: #f5bb00;
     border-radius: 50px;
-    display: table-cell;
 }
 .my-nav .active-link:hover{
     background: transparent;
@@ -44,14 +48,17 @@ body{
 .form-control{
     background: rgba(0,0,0,0.3);
     border-color: #f5bb00;
-    border-width: 1px;
+    border:none;
 }
+
 /******************************* /Nav Bar *******************************/
 
 /******************************* Search bar ********************************/
 .search-bar{
     width: 300px;
     margin-top: 5px !important;
+    margin: auto;
+    float: left;
 }
 .searchArea{
     background-color: aliceblue;
@@ -61,3 +68,53 @@ body{
     color: brown;
 }
 /******************************* /Search bar ********************************/
+
+
+img.logo{
+    height: 10rem;
+    border-style: none;
+    display: inline-block;
+    float: left;
+
+}
+.navbar2{
+    width: 90%;
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.navbar1{
+    width: 100%;
+    
+}
+.theam{
+    float: left;
+    display: inline-block;
+    margin: auto;
+    display: inline-block;
+    margin-top: 3rem;
+    padding-left: 63px;
+    font-family: serif;
+}
+.block-seting{
+    float: left;
+}
+img.left-side{
+    padding-left: 30px;
+    float: right;
+    height: 10rem;
+    border-style: none;
+    display: inline-block;
+
+}
+.menu-bar{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px
+}
+.editor{
+    color: #007398
+}
+.btn-edited{
+    margin: 0;
+    width: 100%;
+}
