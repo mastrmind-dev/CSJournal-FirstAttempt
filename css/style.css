@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -163,3 +164,121 @@ img.ra-heading{
 }
 
 /************************ /footer ************************************************/
+=======
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
+    overflow-x: hidden;
+    display: block;
+    background-color: #eeff;
+}
+/******************************************************************************************/
+
+/******************************* Nav Bar *******************************/
+.navbar{
+    z-index: 10;
+    background-size: auto;
+    background: rgba(0, 0, 0, .5);
+    
+}
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+.navbar-brand span{
+    color: #f5bb00;
+}
+.btn-outline-warning{
+    border-width: 1px;
+}
+.my-nav .nav-link{
+    color: aliceblue;
+}
+.my-nav .active-link{
+    background: #f5bb00;
+    border-radius: 50px;
+}
+.my-nav .active-link:hover{
+    background: transparent;
+    color: #f5bb00;
+}
+.my-nav .nav-link:hover{
+    color: #f5bb00;
+}
+.my-nav .navbar-brand{
+    color: aliceblue;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+.navbar-toggler-icon{color: aliceblue;}
+.form-control{
+    background: rgba(0,0,0,0.3);
+    border-color: #f5bb00;
+    border:none;
+}
+
+/******************************* /Nav Bar *******************************/
+
+/******************************* Search bar ********************************/
+.search-bar{
+    width: 300px;
+    margin-top: 5px !important;
+    margin: auto;
+    float: left;
+}
+ 
+.searchArea{
+    background-color: aliceblue;
+}
+.searchButton{
+    background-color: rgb(255, 253, 127);
+    color: brown;
+}
+/******************************* /Search bar ********************************/
+
+/*******************************first row************************************/
+
+.space{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h2.faculty-name{
+    margin-top: 4%;
+    font-family: serif;
+    font-size: 2.5rem;
+}
+/******************************* /first row  ************************************/
+img.logo{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-right: 0
+}
+.sujcs{
+    
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+nav.bc-edited{
+    width: 100%;   
+}
+.gap{
+    padding-top: 1rem;
+}
+.dr-button{
+    transform: translate3d(-300px,38px,0px);
+    background-color: #6c757d;
+     text-align: center;
+     overflow: hidden;
+     padding: 0px;
+}
+a.cfp-button{
+    background-color: #6c757d;
+
+
+}
+>>>>>>> af8ece6428a80f469f0235ccaea2c4b95243a69a
