@@ -6,6 +6,7 @@ body{
     color: #333;
     overflow-x: hidden;
     display: block;
+    background-color: #eeff;
 }
 /******************************************************************************************/
 
@@ -14,7 +15,7 @@ body{
     z-index: 10;
     background-size: auto;
     background: rgba(0, 0, 0, .5);
-    padding:0; 
+    
 }
 ul.topnav li.dropdownIcon {
     display: none;
@@ -44,11 +45,26 @@ ul.topnav li.dropdownIcon {
     font-size: 2.2em;
     font-weight: bolder;
 }
+.nav-item .nav-link{
+    color: #6c757d;
+    background: transparent;
+    font-size: 1.5rem;
+}
+.nav-item .nav-link:hover{
+    color: #f5bb00;
+}
+.soci{
+    display: flex;
+    float: right;
+}
 .navbar-toggler-icon{color: aliceblue;}
 .form-control{
     background: rgba(0,0,0,0.3);
     border-color: #f5bb00;
     border:none;
+}
+.nav-item .nav-button:hover{
+    color: #f5bb00;
 }
 
 /******************************* /Nav Bar *******************************/
@@ -60,6 +76,7 @@ ul.topnav li.dropdownIcon {
     margin: auto;
     float: left;
 }
+ 
 .searchArea{
     background-color: aliceblue;
 }
@@ -69,52 +86,80 @@ ul.topnav li.dropdownIcon {
 }
 /******************************* /Search bar ********************************/
 
+/*******************************first row************************************/
 
-img.logo{
-    height: 10rem;
-    border-style: none;
-    display: inline-block;
-    float: left;
+.space{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 
-}
-.navbar2{
-    width: 90%;
-    padding-left: 63px;
-    padding-right: 63px;
-}
-.navbar1{
-    width: 100%;
-    
-}
-.theam{
-    float: left;
-    display: inline-block;
-    margin: auto;
-    display: inline-block;
-    margin-top: 3rem;
-    padding-left: 63px;
+h2.faculty-name{
+    margin-top: 4%;
     font-family: serif;
+    font-size: 2.5rem;
 }
-.block-seting{
-    float: left;
+/******************************* /first row  ************************************/
+img.logo{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-right: 0
 }
-img.left-side{
-    padding-left: 30px;
-    float: right;
-    height: 10rem;
-    border-style: none;
-    display: inline-block;
-
-}
-.menu-bar{
-    width: 100%;
+.sujcs{
+    
+    display: block;
+    margin: auto;
     text-align: center;
-    padding-bottom: 40px
 }
-.editor{
-    color: #007398
+nav.bc-edited{
+    width: 100%;   
 }
-.btn-edited{
-    margin: 0;
-    width: 100%;
+.gap{
+    padding-top: 1rem;
 }
+.dr-button{
+    transform: translate3d(-300px,38px,0px);
+    background-color: #6c757d;
+     text-align: center;
+     overflow: hidden;
+     padding: 0px;
+}
+
+
+/**************************footer********************************/
+
+
+footer.footer-color{
+    background-color: rgba(0, 0, 0, .5);
+}
+ul.list-unlisted{
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+}
+.footer-moified{
+    background-color:#4e555b;
+    color: #fff;
+}
+hr.footerline{
+    background-color: #fff;
+    width: 90px;
+}
+a.link-setting{
+    color: #ccc;
+}
+a.link-setting:hover {
+  color: #f5bb00;
+  background-color: transparent;
+  text-decoration: none;
+}
+.icon-setting{
+    padding-right: 1em;
+}
+img.ra-heading{
+    border-style:solid;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+}
+
+/************************ /footer ************************************************/
