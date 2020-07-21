@@ -4,6 +4,7 @@ body{
     line-height: 1.5rem;
     overflow-x: hidden;
     display: block;
+    width: 100vw;
 }
 /******************************************************************************************/
 
@@ -123,3 +124,66 @@ img.left-side{
     margin: 0;
     width: 100%;
 }
+
+/********************************************** Editor Board *************************************************/
+.keyWordBtn{
+    border-radius: 50px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    border-color: rgb(255, 255, 255) !important;
+    color: rgb(255, 204, 0);
+    transition: .3s;
+    font-weight: 500;
+}
+.keyWordBtn:hover{
+    background: white;
+    color: rgb(94, 76, 4) !important;
+}
+.followBtn{
+    margin-left: 15%;
+    margin-bottom: 20px;
+    width: 70%;
+    background-color: black;
+}
+.cardContent{
+    background-color: black;
+    max-height: 100%;
+}
+.cardListItem{
+    background-color: black;
+}
+.cardLstItem:hover{
+    background-color: rgb(230, 230, 0);
+}
+.cardListBody{
+    border-top-style: double;
+    border-bottom-style: double;
+    border-color: yellow;
+}
+.editorRow{
+    
+}
+.editorIntro{
+    color: white;
+    min-height: 100%;
+}
+
+.editorContainer{
+}
+.editorIntro p{
+    font-weight: 50;
+    margin-bottom: 60px;
+
+}
+.editorFirstWord{
+    color: rgb(255, 204, 0);
+    font-weight: bold !important;
+}
+.editorCol{
+    width: 200px !important;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 28px;
+}
+/********************************************** /Editor Board *************************************************/
