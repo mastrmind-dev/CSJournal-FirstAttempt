@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href='https://fonts.googleapis.com/css?family=Mrs+Sheppards%7CDosis:300,400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800;'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styleEditor.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+
+    <title>Sabaragamuwa University Journal of Computer Science - SUJCS</title>
+</head>
+
+<body style="min-height: 100vh;">
+
+    <!-- ************************ Nav Bar ************************** -->
+    <nav class="navbar navbar-expand-lg my-nav edited-nav">
+        <a class="navbar-brand" href="#"><span>CS</span>Journal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">&#9776;</span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="bg-light form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 btn-outline-warning" type="submit">Search</button>
+        </form>
+        <ul class="d-lg-none navbar-nav mr-auto mt-2 mt-lg-0">
+          <button id="btnGroupDrop1" type="button" class="nav-button btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      JOURNAL OVERVIEW
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class=" nav-button dropdown-item" href="#">About this Journal</a>
+      <a class="nav-button dropdown-item" href="editor.html">Editorial Board</a>
+      <a class="nav-button dropdown-item" href="#">Peer Review Process</a>
+      <a class="nav-button dropdown-item" href="#">Publication Ethics</a>
+      <a class="nav-button dropdown-item" href="#">Abstracting and Indexing</a>
+      <a class="nav-button dropdown-item" href="#">Article Processing charges</a>
+    </div>
+              <button type="button" class="nav-button btn btn-secondary" id="list-profile-list" data-toggle="list"
+              href="#list-Content" role="tab" aria-controls="profile"> CALL FOR PAPERS</button>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">FOR AUTHORS</button>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-settings-list" data-toggle="list" href="#list-esb" role="tab" aria-controls="settings">FOR REVIEWERS</button>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-settings-list" data-toggle="list"
+              href="#list-ep" role="tab" aria-controls="settings">ARTICLES</button>
+        </ul>
+      </div>
+      </nav>
+  <!-- ************************ /Nav Bar ************************** -->
+  <!-- ************************ heading ************************** -->
+      <div class="container-fluid">
+       <div class="row">
+        <div class="col-lg-2 space d-none d-lg-block ">
+          <img class="img-fluid logo" src="assets/SUSL_logo2.png" alt="">
+        </div>
+          <div class="col-lg-6 space">
+            <a href="#"><h2 class="faculty-name"> Faculty of Applied Sciences  <br>Sabaragamuwa
+            University of Sri Lanka</h2></a>
+          </div>
+            <div class="col-lg-4 space sujcs"><a class="navbar-brand" href="#" style="width: 180px" ;><img class="img-fluid" src="assets/SUJCS-Logo-black-png.png" alt=""></a></div>
+         </div>
+        
+ <!-- ************************ nenubar ************************** -->
+        <div class="row">
+        <div class="col-sm-12">
+          <div class="menu-bar ml-auto">
+            <div class="nav-item btn-group d-none d-lg-flex" role="group" aria-label="Basic example">
+               <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="nav-button btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-home"></i> JOURNAL OVERVIEW
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class=" nav-button dropdown-item" href="#">About this Journal</a>
+      <a class="nav-button dropdown-item" href="editor.html">Editorial Board</a>
+      <a class="nav-button dropdown-item" href="#">Peer Review Process</a>
+      <a class="nav-button dropdown-item" href="#">Publication Ethics</a>
+      <a class="nav-button dropdown-item" href="#">Abstracting and Indexing</a>
+      <a class="nav-button dropdown-item" href="#">Article Processing charges</a>
+    </div>
+  </div>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-profile-list" data-toggle="list"
+              href="#list-Content" role="tab" aria-controls="profile"> <i class="fa fa-file-text"></i> CALL FOR PAPERS</button>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class="fa fa-pencil"></i> FOR AUTHORS</button>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-settings-list" data-toggle="list" href="#list-esb" role="tab" aria-controls="settings"><i class="fa fa-comment"></i> FOR REVIEWERS</button>
+
+              <button type="button" class="nav-button btn btn-secondary" id="list-settings-list" data-toggle="list"
+              href="#list-ep" role="tab" aria-controls="settings"><i class="fa fa-file-text-o"></i> ARTICLES</button>
+
+                </div>
+              </div>            
+            </div>
+          </div>
+        
+      
+ <!-- ************************ menubar ************************** -->
+ <!-- ************************ breadcrumb ************************** -->
+    <div class="row">
+      <div class="col-12 col-lg-8 gap">
+        <nav aria-label="bc-edited breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Journals</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sabaragamuwa University Journal of Computer Science</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+          <!-- ************************ /breadcrumb ************************** -->
+        
+<!-- ************************ /heading ************************** -->
+
+
+<!-- *********************************** body **************************************-->
+  <!-- Editor tab --> 
+
+    <div class="container editorContainer">
+      <div class="row editorRow">  
+        
+        <div class="col-* editorCol">
+          <div class="card cardContent editorIntro">
+            <div class="card-body">
+                <p class="card-titl"><span class="editorFirstWord">Editorial Structure</span> consists of a Chief Editor and an Associate Editor, an administrative editorial manager (to handle the acquisition and publishing process), and a corpus of peer reviewers.</p>
+                <h5 class="card-titl"><span class="editorFirstWord">Chief</span> Editors<br>>>></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent editorIntro">
+            <div class="card-body">
+                <h5 class="card-titl"><span class="editorFirstWord font-weight-light">Administrative</span> Editorial <span class="editorFirstWord">Manager</span><br>>>></h5>
+                
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent editorIntro">
+            <div class="card-body">
+              <p class="card-titl"><span class="editorFirstWord">Need to be recruit</span> the initial editorial board from our most interested and flexible colleagues across Sri Lanka and outside, for quality and reputation from the beginning, and to develop a rigorous peer review process. The board is absolutely crucial. Academic journals work on a system of academic capital - therefore we need respected individuals who are willing to sit on the board, even if they are only lending their name and we end up doing most of the legwork. The suggested names are:</p>
+                <h5 class="card-titl">Editorial<span class="editorFirstWord"> Board</span><br>>>></h5>                
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="folCol">
+                <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              </div>
+              <div class="keyCol">
+                <a href="#" class="btn keyWordBtn">84 Key Words</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-* editorCol">
+          <div class="card cardContent text-white">
+            <img class="card-img-top" src="assets/depositphotos_59095205-stock-illustration-businessman-profile-icon.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Editor's name</h5>
+              <p class="card-text">About editor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ut mi et porttitor.</p>
+            </div>
+            <div class="cardListBody">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cardListItem btn-outline-warning bg-dar">University He belongs to</li>
+                <li class="list-group-item cardListItem btn-outline-warning">25 Publications</li>
+                <li class="list-group-item cardListItem btn-outline-warning">100 Views</li>
+                <li class="list-group-item cardListItem btn-outline-warning">1000 Followers</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-warning followBtn text-white">Follow</a>
+              <a href="#" class="btn keyWordBtn">84 Key Words</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- *********************************** body **************************************-->
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 footer-color pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-6 col-lg-3 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <h4 class="text-white mb-3">Contact info</h4>
+          <ul class="list-unlisted" style="font-size: 13px">
+            <li class=""><i class="icon-setting fa fa-info"></i>info@sab.ac.lk</li>
+            <li class=""><i class="icon-setting fa fa-phone"></i>+94-45-2280014</li>
+            <li class=""><i class="icon-setting fa fa-phone"></i>+94-45-2280087</li>
+            <li class=""><i class="icon-setting fa fa-google"></i>sab.ac.lk</li>
+          </ul>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-6 col-lg-3 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+         <h4 class="text-white mb-3">Vice Chancelor's Office</h4>
+          <ul class="list-unlisted" style="font-size: 13px">
+            <a class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-phone"></i>+94-45-2280012</li></a>
+            <a  class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-google"></i>vc@sab.ac.lk</li></a>
+            <a  class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-phone"></i>+94-45-2280128</li></a>
+            <a class="link-setting" href="#"><li class=""><i class=" icon-setting fa fa-map-marker"></i>Sabaragamuwa University of Sri Lanka,
+P.O. Box 02, Belihuloya, 70140,
+Sri Lanka.</li></a>
+          </ul>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-6 col-lg-3 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <h4 class="text-white mb-3">About us</h4>
+          <ul class="list-unlisted" style="font-size: 13px">
+            <a class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-briefcase"></i>Office Of The Dean</li></a>
+            <a class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-bar-chart"></i>Faculty Statistics</li></a>
+            <a class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-eye"></i>Vison and Mission</li></a>
+            <a class="link-setting" href="#"><li class=""><i class="icon-setting fa fa-history"></i>Faculty History</li></a>
+          </ul>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-6 col-lg-3  mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" alt="rating article" class="ra-heading img-fluid"
+            alt="">
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+     
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+
+  <div class="footer-moified footer-copyright text-center py-3">© 2020 SUJCS | Sabaragamuwa University Journal of Computer Science<br>
+ALL RIGHTS RESERVED
+<hr class="footerline">
+
+
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
